@@ -111,3 +111,22 @@ nav a:link, nav a:visited{
 nav a.ativo:link, nav a:hover{
 	color:#FE9380; /*indica a página ativa e o link:hover*/
 }
+
+/*----------------------------------------------------------
+Seção .CHAMADA &lt;&lt;&lt;&lt;&lt;========================================
+----------------------------------------------------------*/
+.chamada{
+	height:290px;
+	text-align:center;
+	width:1200px;
+}
+	h2 span{
+		font-size: 60px;
+		font-weight: 300;
+		letter-spacing: -2px;
+		line-height: 60px;
+	}
+	.chamada h3 {
+		margin: 0 auto;
+		width:900px;
+	}
