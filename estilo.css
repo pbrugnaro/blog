@@ -143,7 +143,7 @@ Seção .CONTAINER - Conteúdo com 3 colunas &lt;&lt;&lt;&lt;&lt;=============
 	width:95%; /* 1200px ÷ 1200px = 1 x 100 = 100% .:. 100% - 5.0% de padding (direita e esquerda) = 95%*/
 }
 
-.contato{
+.contato{ /*aqui temos a classe que controla a antiga container da pagina index, classe feita exclusivamente para contato*/
   background-color:none; /* aqui alteramos a cor do container no formato desktop*/
 	height: 417px;
 	padding:2.5%; /* 30px ÷ 1200px = 0.025 x 100 = 2.5%*/
