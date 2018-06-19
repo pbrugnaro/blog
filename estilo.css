@@ -578,3 +578,16 @@ img {
     box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3);
     max-width: 23vw;
   }
+
+
+  /* ---------------- fieldset ----------------*/
+
+  .sexo{
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+
+    padding-left: 0.75em;
+    padding-right: 78%;
+    border: 2px groove (internal value);
+  }
