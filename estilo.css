@@ -74,7 +74,7 @@ logotipo
 =========================
 */
 	header h1 a{
-		background:url(imagens/logo-criar-site-responsivo.png) no-repeat;
+		background:url(imagens/logovermelho.png) no-repeat;
 		display:block;
 		float:left;
 		height:139px;
@@ -260,8 +260,6 @@ img {
 1200px – Desktops, notebooks com monitores widescreen
 ***********************************************************/
 @media screen and (max-width:1200px){
-
-
   .chamada h3 {
   		font-size: 1.66666666667em; /* 30px ÷ 18px */
   	}
@@ -278,6 +276,7 @@ img {
 ***********************************************************/
 @media screen and (max-width:960px){
   header h1 a{
+    background:url(imagens/logovermelho.png) no-repeat;
   		width:37.5%; /* 360px ÷ 960px */
   	}
   	nav{
@@ -334,6 +333,7 @@ img {
   		text-align:center;
   	}
   		header h1 a{
+        background:url(imagens/logoamarelo.png) no-repeat;
   			background-position: 57% 0;
   			height: 126px;
   			margin-bottom: 15px;
@@ -421,6 +421,7 @@ img {
   	text-align:center;
   }
   	header h1 a{
+      background:url(imagens/logoroxo.png) no-repeat;
   		background-position: 50% 0;
   		display:inherit;
   		height: 126px;
@@ -563,30 +564,28 @@ img {
   	.container p{
   		display:none; /*oculta o parágrafo*/
   	}
+    header h1 a{
+  		background:url(imagens/logoverde.png) no-repeat;
+  	}
 }
 /* --------------------------------------- flexbox css ---------------------------------*/
-
 .cards {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     flex-direction: row;
+    cursor: pointer;
   }
   .cards img {
-    margin: 10px;
-    border: 1px solid #000;
-    box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3);
-    max-width: 23vw;
+    margin: 0px;
+    border: 0px solid #000;
+    box-shadow: 3px 3px 8px 0px rgba(0,0,0,0);
   }
-
-
   /* ---------------- fieldset ----------------*/
-
   .sexo{
     display: block;
     margin-left: 2px;
     margin-right: 2px;
-
     padding-left: 0.75em;
     padding-right: 78%;
     border: 2px groove (internal value);
