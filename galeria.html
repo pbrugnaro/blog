@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <title>Como Criar Site Responsivo com HTML5 e CSS3 - CarlosHPS Blog</title>
+    <title>Blog Pedro</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="estilo.css">
-    <link href="http://necolas.github.io/normalize.css/+Sans:300,400,600,700,80" rel="stylesheet" type="text/css">
+    <!-- estilo ligthbox -->
+    <link rel="stylesheet" type="text/css" href="estilo2.css">
+    <script type="text/javascript" src="script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body class="center clearfix">
@@ -20,25 +22,77 @@
 </nav><!-- fim nav -->
     </header><!-- fim header -->
   <div class="chamada">
-      	<h2> Contato</h2>
-  	<h3>Aqui temos um formulário para você entrar em contato conosco</h3>
+      	<h2> Galeria de fotos</h2>
+  	<h3>Aqui temos algumas fotos </h3>
   </div><!-- fim .chamada -->
   <section>
-<!-- aqui teremos um formulario de contato -->
+<!-- aqui teremos as imagens da galeria -->
 
+<!-- chamando as imagens na pagina -->
     <article class="cards">
-  <img src="imagens/quadrado.png" alt="Sample photo">
-  <img src="imagens/quadrado.png" alt="Sample photo">
-  <img src="imagens/quadrado.png" alt="Sample photo">
-  <img src="imagens/quadrado.png" alt="Sample photo">
-  <img src="imagens/quadrado.png" alt="Sample photo">
-  <img src="imagens/quadrado.png" alt="Sample photo">
-  <img src="imagens/quadrado.png" alt="Sample photo">
-  <img src="imagens/quadrado.png" alt="Sample photo">
-  <img src="imagens/quadrado.png" alt="Sample photo">
+      <div class="row">
+  <div class="column">
+    <img src="imagens/img_nature.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="imagens/img_snow.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="imagens/img_mountains.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="imagens/img_lights.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+<!-- chamando as imagens para o ligthbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="imagens/img_nature_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="imagens/img_snow_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="imagens/img_mountains_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="imagens/img_lights_wide.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+<!-- titulo das imagens -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+<!-- titulo das imagens -->
+    <div class="column">
+      <img class="demo cursor" src="imagens/img_nature_wide.jpg" style="width:100%" onclick="currentSlide(1)" alt="Natureza e por do sol">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="imagens/img_snow_wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="neve">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="imagens/img_mountains_wide.jpg" style="width:100%" onclick="currentSlide(3)" alt="Montanhas">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="imagens/img_lights_wide.jpg" style="width:100%" onclick="currentSlide(4)" alt="luzes do norte">
+    </div>
+  </div>
+</div>
   <article>
-
-
 	</section><!-- fim .container -->
     <footer>
     	<small class="copyright">
