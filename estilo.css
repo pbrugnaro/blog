@@ -1,265 +1,265 @@
-body{
+  body{
   font-size: 1.125em; /* 18px ÷ 16px = 1.125em */
-	background:url(imagens/background.jpg); /*inserção da imagem de fundo em todo o site*/
-	color:#868686; /*cor padrão para todas as fontes*/
-	font-family: "Open Sans", Helvetica, sans-serif, arial; /*definição da fonte geral incorporada do Google Fonts*/
-	font-size: 18px; /*tamanho da fonte*/
-	font-weight: 300; /*indica que a fonte está coonfigurada como Open Sans Light*/
-	line-height: 22px;/*altura da linha*/
-	text-align: left; /*alinhando o texto à esquerda*/
-	text-shadow:1px 1px 0px #fff; /*sombreamento para as fontes do site*/
-}
+  background:url(imagens/background.jpg); /*inserção da imagem de fundo em todo o site*/
+  color:#868686; /*cor padrão para todas as fontes*/
+  font-family: "Open Sans", Helvetica, sans-serif, arial; /*definição da fonte geral incorporada do Google Fonts*/
+  font-size: 18px; /*tamanho da fonte*/
+  font-weight: 300; /*indica que a fonte está coonfigurada como Open Sans Light*/
+  line-height: 22px;/*altura da linha*/
+  text-align: left; /*alinhando o texto à esquerda*/
+  text-shadow:1px 1px 0px #fff; /*sombreamento para as fontes do site*/
+  }
 
-.center{
-	margin: 0 auto;
-	max-width:1200px; /*largura máxima do layout*/
-	width: 90%; /*ajuste do layout à tela*/
-}
-/*.clearfix usado para adicionar um espaço vazio antes e depois dos elementos
+  .center{
+  margin: 0 auto;
+  max-width:1200px; /*largura máxima do layout*/
+  width: 90%; /*ajuste do layout à tela*/
+  }
+  /*.clearfix usado para adicionar um espaço vazio antes e depois dos elementos
   evitando que os floats se aglomerem.
-*/
-.clearfix:before, .clearfix:after {
+  */
+  .clearfix:before, .clearfix:after {
     content: " ";
     display: table;
-}
-.clearfix:after {
+  }
+  .clearfix:after {
     clear: both;
-}
-.clearfix {
+  }
+  .clearfix {
     *zoom: 1;
-}
-/*fim do clearfix*/
-img, picture, video, embed {
+  }
+  /*fim do clearfix*/
+  img, picture, video, embed {
     max-width: 100%; /*define a largura máxima em até 100%*/
-}
-h1, h2{
-	color:#FE9380;
-	font-size: 60px;
-	font-weight: 800;
-	letter-spacing: -3px; /*espaçamento entre as letras*/
-	line-height: 60px;
-}
-h3{
-	font-size: 32px;
-	font-weight: 300;
-	letter-spacing: -2px; /*espaçamento entre as letras*/
-	line-height: 38px;
-}
-p{
-	font-weight: 300;/*modifica a força da fonte para light*/
-	letter-spacing: -1px; /*espaçamento entre as letras*/
-}
-a, a:link, a:visited{
-	color:#FE9380; /*cor dos links*/
-	font-weight:400; /*modifica a força da fonte para semi-bold*/
-	text-decoration:none; /*retira o sublinhado dos links*/
-}
-a:hover{
-	color:#FE5E41;
-	text-decoration:underline; /*inseri uma linha sob o link*/
-	text-shadow:none; /*retira a sombra da fonte*/
-}
+  }
+  h1, h2{
+  color:#FE9380;
+  font-size: 60px;
+  font-weight: 800;
+  letter-spacing: -3px; /*espaçamento entre as letras*/
+  line-height: 60px;
+  }
+  h3{
+  font-size: 32px;
+  font-weight: 300;
+  letter-spacing: -2px; /*espaçamento entre as letras*/
+  line-height: 38px;
+  }
+  p{
+  font-weight: 300;/*modifica a força da fonte para light*/
+  letter-spacing: -1px; /*espaçamento entre as letras*/
+  }
+  a, a:link, a:visited{
+  color:#FE9380; /*cor dos links*/
+  font-weight:400; /*modifica a força da fonte para semi-bold*/
+  text-decoration:none; /*retira o sublinhado dos links*/
+  }
+  a:hover{
+  color:#FE5E41;
+  text-decoration:underline; /*inseri uma linha sob o link*/
+  text-shadow:none; /*retira a sombra da fonte*/
+  }
 
-/*----------------------------------------------------------
-Seção HEADER - Topo do Site &lt;&lt;&lt;&lt;&lt;===========================
-----------------------------------------------------------*/
-header{
-	border-bottom: 1px solid #E0E0E0;
-	height:150px;
-	width:100%; /*1200px ÷ 1200px = 1 x 100 = 100%*/
-}
-/*
-=========================
-logotipo
-=========================
-*/
-	header h1 a{
-		background:url(imagens/logovermelho.png) no-repeat;
-		display:block;
-		float:left;
-		height:139px;
-		text-indent:-9999;
-		width:58.333333333333%; /* 700px ÷ 1200px = 0.58333333333333 x 100 = 58.333333333333%*/
-	}
-/*
-=========================
-nav - menu de navegação
-=========================
-*/
-nav{
-	float:right;
-	margin-top:78px;
-	text-align:right;
-	width:41.6666666666667%; /* 500px ÷ 1200px = 0.416666666666667 x 100 = 41.6666666666667%*/
-}
-	nav ul{
-		list-style-type:none;
-	}
-		nav li {
-			display: inline;
-		}
-			nav ul li a{
-				margin-right: 2.5%; /* 30px ÷ 1200px = 0.025 x 100 = 2.5%*/
-			}
-				nav ul li:nth-child(5) a{
-					margin-right:0;
-				}
-			nav a:link, nav a:visited{
-				color:#999;
-				font-size: 1.2222222222em; /* 22px ÷ 18px = 1.2222222222em */
-				font-weight: 300;
-				letter-spacing: -0.0909090909em; /* -2px ÷ 22px = -0.0909090909em */
-				line-height: 1.18181818182em; /* 26px ÷ 22px = 1.18181818182em */
-				display:inline-block;
-			}
-			nav a.ativo:link, nav a:hover{
-				color:#FE9380;
-			}
-/*----------------------------------------------------------
-Seção .CHAMADA &lt;&lt;&lt;&lt;&lt;========================================
-----------------------------------------------------------*/
-.chamada{
-	height:290px;
-	text-align:center;
-	width:100%; /*1200px ÷ 1200px = 1 x 100 = 100%*/
-}
-	h2 span{
-		font-size: 1em; /* 60px ÷ 60px = 1em */
-		font-weight: 300;
-		letter-spacing: -0.0333333333em; /* -2px ÷ 60px = 0.0333333333em */
-		line-height: 1em; /* 60px ÷ 60px = 1em */
-	}
-	.chamada h3 {
-		margin: 0 auto;
-		width:75%; /* 900px ÷ 1200px = 0.75 x 100 = 75%*/
-	}
-/*----------------------------------------------------------
-Seção .CONTAINER - Conteúdo com 3 colunas &lt;&lt;&lt;&lt;&lt;=============
-----------------------------------------------------------*/
-.container{
-	background-color:#FE9481; /* aqui alteramos a cor do container no formato desktop*/
-	height: 417px;
-	padding:2.5%; /* 30px ÷ 1200px = 0.025 x 100 = 2.5%*/
-	width:95%; /* 1200px ÷ 1200px = 1 x 100 = 100% .:. 100% - 5.0% de padding (direita e esquerda) = 95%*/
-}
+  /*----------------------------------------------------------
+  Seção HEADER - Topo do Site &lt;&lt;&lt;&lt;&lt;===========================
+  ----------------------------------------------------------*/
+  header{
+  border-bottom: 1px solid #E0E0E0;
+  height:150px;
+  width:100%; /*1200px ÷ 1200px = 1 x 100 = 100%*/
+  }
+  /*
+  =========================
+  logotipo
+  =========================
+  */
+  header h1 a{
+  	background:url(imagens/logovermelho.png) no-repeat;
+  	display:block;
+  	float:left;
+  	height:139px;
+  	text-indent:-9999;
+  	width:58.333333333333%; /* 700px ÷ 1200px = 0.58333333333333 x 100 = 58.333333333333%*/
+  }
+  /*
+  =========================
+  nav - menu de navegação
+  =========================
+  */
+  nav{
+  float:right;
+  margin-top:78px;
+  text-align:right;
+  width:41.6666666666667%; /* 500px ÷ 1200px = 0.416666666666667 x 100 = 41.6666666666667%*/
+  }
+  nav ul{
+  	list-style-type:none;
+  }
+  	nav li {
+  		display: inline;
+  	}
+  		nav ul li a{
+  			margin-right: 2.5%; /* 30px ÷ 1200px = 0.025 x 100 = 2.5%*/
+  		}
+  			nav ul li:nth-child(5) a{
+  				margin-right:0;
+  			}
+  		nav a:link, nav a:visited{
+  			color:#999;
+  			font-size: 1.2222222222em; /* 22px ÷ 18px = 1.2222222222em */
+  			font-weight: 300;
+  			letter-spacing: -0.0909090909em; /* -2px ÷ 22px = -0.0909090909em */
+  			line-height: 1.18181818182em; /* 26px ÷ 22px = 1.18181818182em */
+  			display:inline-block;
+  		}
+  		nav a.ativo:link, nav a:hover{
+  			color:#FE9380;
+  		}
+  /*----------------------------------------------------------
+  Seção .CHAMADA &lt;&lt;&lt;&lt;&lt;========================================
+  ----------------------------------------------------------*/
+  .chamada{
+  height:290px;
+  text-align:center;
+  width:100%; /*1200px ÷ 1200px = 1 x 100 = 100%*/
+  }
+  h2 span{
+  	font-size: 1em; /* 60px ÷ 60px = 1em */
+  	font-weight: 300;
+  	letter-spacing: -0.0333333333em; /* -2px ÷ 60px = 0.0333333333em */
+  	line-height: 1em; /* 60px ÷ 60px = 1em */
+  }
+  .chamada h3 {
+  	margin: 0 auto;
+  	width:75%; /* 900px ÷ 1200px = 0.75 x 100 = 75%*/
+  }
+  /*----------------------------------------------------------
+  Seção .CONTAINER - Conteúdo com 3 colunas &lt;&lt;&lt;&lt;&lt;=============
+  ----------------------------------------------------------*/
+  .container{
+  background-color:#FE9481; /* aqui alteramos a cor do container no formato desktop*/
+  height: 417px;
+  padding:2.5%; /* 30px ÷ 1200px = 0.025 x 100 = 2.5%*/
+  width:95%; /* 1200px ÷ 1200px = 1 x 100 = 100% .:. 100% - 5.0% de padding (direita e esquerda) = 95%*/
+  }
 
-.contato{ /*aqui temos a classe que controla a antiga container da pagina index, classe feita exclusivamente para contato*/
+  .contato{ /*aqui temos a classe que controla a antiga container da pagina index, classe feita exclusivamente para contato*/
   background-color:none; /* aqui alteramos a cor do container no formato desktop*/
-	height: 417px;
-	padding:2.5%; /* 30px ÷ 1200px = 0.025 x 100 = 2.5%*/
-	width:95%; /* 1200px ÷ 1200px = 1 x 100 = 100% .:. 100% - 5.0% de padding (direita e esquerda) = 95%*/
-}
-/*Por causa do padding, a largura, width, do .container passou de 1.200px para 1.140px (95%)*/
-.desktop, .tablet, .mobile{
-	float:left;
-	position:relative;
-	text-align:center;
-	width:31.57894736842105%; /* 360px ÷ 1140px = 0.3157894736842105 x 100 = 31.57894736842105%*/
-}
-.desktop, .tablet{
-	margin-right: 2.631578947368421%; /* 30px ÷ 1140px =  0.02631578947368421 x 100 = 2.631578947368421%*/
-}
-.mobile{
-	background-color:#9C8CB9;
-	margin-right:0px;
-}
-.desktop{
-	background-color:#FE9481;
-}
-.tablet{
-	background-color:#FCDA92;
-}
-/*
-=========================
-figure - imagens
-=========================
-*/
-.container .desktop figure, .container .tablet figure, .container .mobile figure {
-	width:69.44444444444444%; /* 250px ÷ 360px = 0.6944444444444 x 100 = 69.44444444444444%*/
-}
-/*
-=========================
-formatação do texto
-=========================
-*/
-.container h3{
-	color:#fff;
-	font-size: 1.77777777778em; /* 32px ÷ 18px = 1.77777777778em */
-	font-weight: 300;
-	letter-spacing: -0.0625em; /* -2px ÷ 32px = 0.0625em */
-	margin-bottom: 30px;
-	text-shadow:none;
-}
-.container p{
-	background-color:#fff;
-	float:left;
-	height:160px;
-	padding: 1.9444444444444445%; /* 7px ÷ 360px =  0.019444444444444445 x 100 =  1.9444444444444445%*/
-	position:absolute;
-	width-max:100%; /* 360px ÷ 360px = 1 x 100 = 100%*/
-	text-align:justify;
-	top:225px;
-}
-/*
-=========================
-formatação do botão
-=========================
-*/
-span.btn{
-	font-size: 1.1111111111em; /* 20px ÷ 18px = 1.1111111111em */
-	font-weight: 400;
-	letter-spacing: -0.1em; /* -2px ÷ 20px = -0.1em */
-	height:27px;
-	margin-top: 30px;
-	position:absolute;
-	right: 1px;
-	text-align:center;
-	text-shadow:none;
-	width:33.33333333333333%; /* 120px ÷ 360px = 0.3333333333333333 x 100 = 33.33333333333333%*/
-}
-span.btn a{
-	color:#fff;
-	padding: 2px 3.333333333333333%; /* 4px ÷ 120px = 0.3333333333333333 x 100 = 3.333333333333333%*/
-}
-.desktop span.btn a{
-	background-color:#FE9481;
-}
-.tablet span.btn a{
-	background-color:#FCDA92;
-}
-.mobile span.btn a{
-	background-color:#9C8CB9;
-}
-/*----------------------------------------------------------
-Seção FOOTER - Rodape com 2 colunas &lt;&lt;&lt;&lt;&lt;===================
-----------------------------------------------------------*/
-footer{
-	clear:both;
-	height: 50px;
-	padding: 10px 0;
-	width:100%; /* 1200px ÷ 1200px = 1 x 100 = 100%*/
-}
-.copyright{
-	float:left;
-	margin-left: 2.5%; /* 30px ÷ 1200px = 0.025 x 100 = 2.5%*/
-}
-.desenvolvedor{
-	float:right;
-}
-.desenvolvedor figure{
-	width:100%;
-}
+  height: 417px;
+  padding:2.5%; /* 30px ÷ 1200px = 0.025 x 100 = 2.5%*/
+  width:95%; /* 1200px ÷ 1200px = 1 x 100 = 100% .:. 100% - 5.0% de padding (direita e esquerda) = 95%*/
+  }
+  /*Por causa do padding, a largura, width, do .container passou de 1.200px para 1.140px (95%)*/
+  .desktop, .tablet, .mobile{
+  float:left;
+  position:relative;
+  text-align:center;
+  width:31.57894736842105%; /* 360px ÷ 1140px = 0.3157894736842105 x 100 = 31.57894736842105%*/
+  }
+  .desktop, .tablet{
+  margin-right: 2.631578947368421%; /* 30px ÷ 1140px =  0.02631578947368421 x 100 = 2.631578947368421%*/
+  }
+  .mobile{
+  background-color:#9C8CB9;
+  margin-right:0px;
+  }
+  .desktop{
+  background-color:#FE9481;
+  }
+  .tablet{
+  background-color:#FCDA92;
+  }
+  /*
+  =========================
+  figure - imagens
+  =========================
+  */
+  .container .desktop figure, .container .tablet figure, .container .mobile figure {
+  width:69.44444444444444%; /* 250px ÷ 360px = 0.6944444444444 x 100 = 69.44444444444444%*/
+  }
+  /*
+  =========================
+  formatação do texto
+  =========================
+  */
+  .container h3{
+  color:#fff;
+  font-size: 1.77777777778em; /* 32px ÷ 18px = 1.77777777778em */
+  font-weight: 300;
+  letter-spacing: -0.0625em; /* -2px ÷ 32px = 0.0625em */
+  margin-bottom: 30px;
+  text-shadow:none;
+  }
+  .container p{
+  background-color:#fff;
+  float:left;
+  height:160px;
+  padding: 1.9444444444444445%; /* 7px ÷ 360px =  0.019444444444444445 x 100 =  1.9444444444444445%*/
+  position:absolute;
+  width-max:100%; /* 360px ÷ 360px = 1 x 100 = 100%*/
+  text-align:justify;
+  top:225px;
+  }
+  /*
+  =========================
+  formatação do botão
+  =========================
+  */
+  span.btn{
+  font-size: 1.1111111111em; /* 20px ÷ 18px = 1.1111111111em */
+  font-weight: 400;
+  letter-spacing: -0.1em; /* -2px ÷ 20px = -0.1em */
+  height:27px;
+  margin-top: 30px;
+  position:absolute;
+  right: 1px;
+  text-align:center;
+  text-shadow:none;
+  width:33.33333333333333%; /* 120px ÷ 360px = 0.3333333333333333 x 100 = 33.33333333333333%*/
+  }
+  span.btn a{
+  color:#fff;
+  padding: 2px 3.333333333333333%; /* 4px ÷ 120px = 0.3333333333333333 x 100 = 3.333333333333333%*/
+  }
+  .desktop span.btn a{
+  background-color:#FE9481;
+  }
+  .tablet span.btn a{
+  background-color:#FCDA92;
+  }
+  .mobile span.btn a{
+  background-color:#9C8CB9;
+  }
+  /*----------------------------------------------------------
+  Seção FOOTER - Rodape com 2 colunas 
+  ----------------------------------------------------------*/
+  footer{
+  clear:both;
+  height: 50px;
+  padding: 10px 0;
+  width:100%; /* 1200px ÷ 1200px = 1 x 100 = 100%*/
+  }
+  .copyright{
+  float:left;
+  margin-left: 2.5%; /* 30px ÷ 1200px = 0.025 x 100 = 2.5%*/
+  }
+  .desenvolvedor{
+  float:right;
+  }
+  .desenvolvedor figure{
+  width:100%;
+  }
 
 
-img {
+  img {
     max-width: 100%; /*define a largura máxima em até 100%*/
-}
+  }
 
 
-/*
-1200px – Desktops, notebooks com monitores widescreen
-***********************************************************/
-@media screen and (max-width:1200px){
+  /*
+  1200px – Desktops, notebooks com monitores widescreen
+  ***********************************************************/
+  @media screen and (max-width:1200px){
   .chamada h3 {
   		font-size: 1.66666666667em; /* 30px ÷ 18px */
   	}
@@ -270,11 +270,11 @@ img {
   		height: 170px;
   		top:217px;
   	}
-}
-/*
-960px – Tablets no formato paisagem e alguns monitores mais antigos
-***********************************************************/
-@media screen and (max-width:960px){
+  }
+  /*
+  960px – Tablets no formato paisagem e alguns monitores mais antigos
+  ***********************************************************/
+  @media screen and (max-width:960px){
   header h1 a{
     background:url(imagens/logovermelho.png) no-repeat;
   		width:37.5%; /* 360px ÷ 960px */
@@ -315,11 +315,11 @@ img {
   			font-size: 0.8333333333em; /*15px ÷ 18px*/
   			top: 230px;
   		}
-}
-/*
-768px – Tablets no formato retrato, como o iPad
-***********************************************************/
-@media screen and (max-width:768px){
+  }
+  /*
+  768px – Tablets no formato retrato, como o iPad
+  ***********************************************************/
+  @media screen and (max-width:768px){
   /*cores dos links e H2*/
   	h2, a, a:link, a:visited{
   	color:#FBCA61;
@@ -394,11 +394,11 @@ img {
   			span.btn a{
   				padding: 2px 3.333333333333333%; /* 4px ÷ 120px */
   			}
-}
-/*
-480px – Smartphones no formato paisagem com tela pequena
-***********************************************************/
-@media screen and (max-width:480px){
+  }
+  /*
+  480px – Smartphones no formato paisagem com tela pequena
+  ***********************************************************/
+  @media screen and (max-width:480px){
   /*Geral*/
   *{
   	margin:0;
@@ -479,7 +479,7 @@ img {
   		float:none;
   		height:160px;
   		width:100%;
-  	}
+  }
   	.container .desktop figure, .container .tablet figure, .container .mobile figure{
   		float:left;
   		height:160px;
@@ -510,11 +510,11 @@ img {
   	.desenvolvedor figure{
   		width:inherit;
   	}
-}
-/*
-320px – Smartphones no formato retrato com tela pequena
-***********************************************************/
-@media screen and (max-width:320px){
+  }
+  /*
+  320px – Smartphones no formato retrato com tela pequena
+  ***********************************************************/
+  @media screen and (max-width:320px){
   /*cores dos links e H2*/
   h2, a, a:link, a:visited{
   	color:#79E1D5;
@@ -567,19 +567,23 @@ img {
     header h1 a{
   		background:url(imagens/logoverde.png) no-repeat;
   	}
-}
-/* --------------------------------------- flexbox css ---------------------------------*/
-.cards {
+  }
+  /* --------------------------------------- flexbox css ---------------------------------*/
+  .cards {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     flex-direction: row;
     cursor: pointer;
+    
+
   }
-  .cards img {
-    margin: 0px;
-    border: 0px solid #000;
-    box-shadow: 3px 3px 8px 0px rgba(0,0,0,0);
+.cards img {
+    margin: 10px;
+    border: 1px solid #000;
+    box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3);
+    max-width: 23vw;
+    min-width: 300px; /*tamanho minimo das imagens */
   }
   /* ---------------- fieldset ----------------*/
   .sexo{
