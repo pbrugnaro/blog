@@ -231,7 +231,7 @@
   background-color:#9C8CB9;
   }
   /*----------------------------------------------------------
-  Seção FOOTER - Rodape com 2 colunas 
+  Seção FOOTER - Rodape com 2 colunas
   ----------------------------------------------------------*/
   footer{
   clear:both;
@@ -574,15 +574,13 @@
     flex-wrap: wrap;
     align-items: flex-start;
     flex-direction: row;
-    cursor: pointer;
-    
-
+    cursor: pointer; /* tipo do cursor ao passar por cima da imagem*/
   }
 .cards img {
-    margin: 10px;
+    margin: 5px;
     border: 1px solid #000;
     box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3);
-    max-width: 23vw;
+    max-width: 25vw;
     min-width: 300px; /*tamanho minimo das imagens */
   }
   /* ---------------- fieldset ----------------*/
